@@ -18,7 +18,7 @@ class ErrorBoundary extends Component {
 
 export default ErrorBoundary;
 
-/* // Then when we want to use ErrorBoundary we can wrap it in the required component like this: 
+/* // In order to use ErrorBoundary we can use it in components like this: 
 function ComponentNameErrorBoundary(){
     <ErrorBoundary errorComponent={<h2>There was an erro...</h2>}>
         <MyComponnetName />
