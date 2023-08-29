@@ -83,8 +83,9 @@ const AlbumsOverview = () => {
           setAlbums([]);
         }
       } catch (error) {
-        // Sentry could be good option to use
         setErrorMsg(`Error fetching albums: ${error}`);
+        // typically you would log this to something like TrackJS/Sentry/NewRelic
+        console.log.error("Error fetching data", error);
       }
     } else {
       setAlbums([]);
