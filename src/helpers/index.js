@@ -1,9 +1,9 @@
-import { getSearchedItemsInit, getAlbum, getAlbumsApi } from "./searchHelpers";
+import { getSearchedItemsInit, getAlbumsApi } from "./searchHelpers";
 import {
   getSearchedFieldStyles,
   getAlbumListStyles,
   getAlbumBoxStyles,
 } from "./styles";
 
-export { getSearchedItemsInit, getAlbum, getAlbumsApi };
+export { getSearchedItemsInit, getAlbumsApi };
 export { getSearchedFieldStyles, getAlbumListStyles, getAlbumBoxStyles };
