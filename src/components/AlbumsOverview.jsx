@@ -77,7 +77,7 @@ const AlbumsOverview = () => {
       } catch (error) {
         setErrorMsg(`Error fetching albums: ${error}`); // ? path to specific message in error object
         // typically you would log this to something like TrackJS/Sentry/NewRelic
-        console.log.error("Error fetching data", error);
+        console.error("Error fetching data", error);
       }
     } else {
       setAlbums([]);
