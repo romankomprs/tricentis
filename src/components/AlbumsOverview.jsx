@@ -61,7 +61,9 @@ const AlbumsOverview = () => {
   }, [searchedQuery]);
 
   const fetchAlbums = async (searchQuery) => {
-    if (searchQuery.length > 0) {
+    const searchQueryNotEmpty = searchQuery.length > 0;
+
+    if (searchQueryNotEmpty) {
       try {
         const response = await fetch(getAlbumsApi(searchQuery));
         const albumApiResponse = await response.json();
