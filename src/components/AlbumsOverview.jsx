@@ -21,9 +21,6 @@ const AlbumsOverview = () => {
   const [albums, setAlbums] = useState([]);
   const [errorMsg, setErrorMsg] = useState("");
 
-  const elementRef = useRef(searchedItems);
-  elementRef.current = searchedItems;
-
   let intervalIndex = 0; // state of interval
 
   useEffect(() => {
@@ -53,7 +50,6 @@ const AlbumsOverview = () => {
      * otherwise it keeps the previous searched values and will not reset */
     setSearchedItems(searchedItemsInit);
     fetchAlbums(searchedQuery);
-    intervalIndex = 0; // format rotating index number to 0 when change search term
 
     return () => {
       setErrorMsg(null);
